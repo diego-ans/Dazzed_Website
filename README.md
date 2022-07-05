@@ -1,4 +1,4 @@
 # Dazzed_Website
 
 
-i think im just going to make a website like a kind of shop
+nvm it isnt going to be a shop, maybe im starting to create my portfolio?
