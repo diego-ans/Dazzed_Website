@@ -1,2 +1,4 @@
 # Dazzed_Website
-idk
+
+
+i think im just going to make a website like a kind of shop
