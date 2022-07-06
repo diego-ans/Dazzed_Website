@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dgeti</title>
+    
+    <link rel="shortcut icon" href="img/dzd.png" type="image/x-icon">
+    <title>Dozzed - main</title>
     
     
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/default.css">
 
+    <!--Js at the bottom-->
     
 
 </head>
@@ -18,7 +21,7 @@
 
     <nav>
 
-        <input type="checkbox" id="hideNav" name="hideNav" hidden >
+        <input type="checkbox" id="hideNav" name="hideNav" checked hidden >
 
         <div class="navHeader">
 
@@ -31,7 +34,7 @@
 
             <div class="iconContainer">
                                 
-                <div class="gitIcon" onclick="window.location='https://github.com/diegoans337' ">
+                <div class="gitIcon" onclick="window.location='https://github.com/diego-ans/' ">
                     <img src="img/GitLogo.png" alt="GitLogo">
                 </div>
 
@@ -39,7 +42,7 @@
 
                 <div class="menuIcon">
                     <label for="hideNav">
-                        <img src="img/menuIcon.png" alt="MenuIcon">
+                        <img src="img/menuIcon.png" alt="MenuIcon" id="state">
                     </label>
                 </div>
 
@@ -59,33 +62,33 @@
                 <!--
 
                     i use onclick instead of the href in <a> tag
-                    to be able to redirect from all the div with
+                    to be able to redirect from the div
                         
                     ( i only leave the <a> tag to mark that it is a redirect link  )
 
                 -->
 
-                <div class="link" onclick="window.location='https://github.com/diegoans337'">
+                <div class="link" onclick="window.location='https://github.com/diego-ans/'">
 
                     <div>
                         <img src="img/GitLogo.png" alt="GitLogo">
                     </div>
 
-                    <a href="">
+                    <a href="https://github.com/diego-ans/">
                         Github
                     </a>
 
                 </div>
 
 
-                <div class="link">
+                <div class="link" onclick="window.location='html/projects.html'">
 
                     <div>
                         <img src="img/folderIcon.png" alt="folderIcon">
                     </div>
 
-                    <a href="">
-                        Proyectos
+                    <a href="html/projects.html">
+                        Projects
                     </a>
 
                 </div>
@@ -93,14 +96,14 @@
                 <br>
                 <hr>
 
-                <div class="link">
+                <div class="link" onclick="location='html/devHistory.html'">
 
                     <div>
                         <img src="img/questionIcon.png" alt="questionIcon">
                     </div>
 
-                    <a href="">
-                        What i know
+                    <a href="html/devHistory.html">
+                        My dev history
                     </a>
 
                 </div>
@@ -115,8 +118,13 @@
     </nav>
 
 
-    
+        
+
+
+
 
 
 </body>
+
+<script src="js/script_Menu.js"></script>
 </html>

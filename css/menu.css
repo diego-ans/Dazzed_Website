@@ -4,6 +4,7 @@ nav{
 
     width: 100vw;
     height: 15vh;
+    max-height: 100px;
 
     background-color: rgb(237, 237, 237);
     
@@ -50,33 +51,52 @@ nav{
 
 .navHeader>.iconContainer>.gitIcon{
     box-shadow: 0px 0px 10px rgb(148, 146, 146);
-    border-radius: 10px;
+    border-radius: 5px;
     
     
     width: 30px;
     height: 30px;
+
+    transition: 300ms; /*anim at the end of file*/
 }
 
 
 .navHeader>.iconContainer>.menuIcon{
     margin-right: 20px;
+
     box-shadow: 0px 0px 10px rgb(148, 146, 146);
     border-radius: 10px;
 
     width: 30px;
     height: 30px;
+
+    transition: 300ms; /*anim at the end of file*/
 }
 
 
-.menuIcon:hover, .gitIcon:hover{
+.menuIcon>label:hover, .gitIcon:hover{
     cursor: pointer;
+
 }
 
-/*The burger icon to dropdown menu works here*/
+
+
+
+/*The dropdown menu works here*/
 
 nav>#hideNav:checked ~ .navBody{
     transform: translateY(-120vh);
 }
+
+
+
+
+
+
+
+
+
+
 
 
 /*body ####################*/
@@ -86,6 +106,7 @@ nav>#hideNav:checked ~ .navBody{
 
 
 .navBody{
+    
     position: absolute;
     z-index: -3;
 
@@ -158,19 +179,29 @@ to be able to select all the link, img gonna attach a event listener to them
 
 
 
+/* ----------------- animations ----------------- */
 
-/*personalized links
-lke facebook when on hover, is blue
-and when carreers on hover, is the institition color
-*/
 
-/*
-.linkContainer>.link:nth-child(1):hover{
-    background-color: rgba(197, 3, 3, 0.425);
+/* ----------------- header icons animations ----------------- */
+
+.navHeader>.iconContainer>.gitIcon:hover{
+    background-color: rgb(191, 184, 184);
 }
-.linkContainer>.link:nth-child(4):hover{
-    background-color: rgb(153, 153, 190);
-}*/
 
+.navHeader>.iconContainer>.gitIcon:active{
+    background-color: rgb(190, 151, 195);
+    transition: 100ms;
+}
+
+
+.navHeader>.iconContainer>.menuIcon:hover{
+    background-color: rgb(191, 184, 184);
+
+}
+
+.navHeader>.iconContainer>.menuIcon:active{
+    background-color: rgb(190, 151, 195);
+    transition: 100ms;
+}
 
 
